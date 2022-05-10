@@ -26,7 +26,7 @@ def hello_world():
 #         csv_writer.writerow([email, subject, message])
 
 def write_data_csv(data):
-    with open('C:\\Users\\bhatr\\OneDrive\\Desktop\\LearnPython\\app\\webserver\\database.csv', newline='', mode='a', encoding='utf-8') as database:
+    with open('C:\\Users\\bhatr\\OneDrive\\Desktop\\LearnPython\\app\\portfolio\\database.csv', newline='', mode='a', encoding='utf-8') as database:
         email = data["email"]
         subject = data["subject"]
         message = data["message"]
