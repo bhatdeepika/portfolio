@@ -5,6 +5,10 @@ import sys
 from flask import Flask, render_template, url_for, request, redirect
 app = Flask(__name__)
 
+# to handle 500 error
+@app.errorhandler(500)
+def exception_handler(e):
+    return render_template('500.html'), 500
 
 @app.route('/<string:page_name>')
 def render_static(page_name):
